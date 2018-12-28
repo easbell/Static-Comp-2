@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Static Comp 2</title>
+      <link rel="stylesheet" type="text/css" href="normalize.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,700" rel="stylesheet">
+      <meta name="viewport" content="width= device-width, initial-scale=1">
+  </head>
+  <body>
+    <section class="sidebar">
+      <article class=sidebar-top>
+        <img class="headshot" src="assets/headshot.jpg">
+        <h5>Newton Barley<i class="fas fa-caret-down"></i></h5>
+      </article>
+      <article class="sidebar-main">
+        <h6>Main</h6>
+        <p><i class="fas fa-home"></i>HOME</p>
+        <p><i class="fas fa-briefcase"></i>JOBS</p>
+        <p><i class="fas fa-file-invoice"></i>RESUMES</p>
+        <p><i class="fas fa-list-alt"></i>TASKS</p>
+        <p><i class="fas fa-calendar-alt"></i>CALENDAR</p>
+      </article>
+      <article class="sidebar-admin">
+        <h6>Admin</h6>
+        <p><i class="fas fa-users"></i>USERS</p>
+        <p><i class="fas fa-map-marker-alt"></i>LOCATIONS</p>
+        <p><i class="fab fa-stack-overflow"></i>WORKFLOWS</p>
+        <p><i class="fas fa-clipboard-list"></i>JOB BOARDS</p>
+        <p><i class="fas fa-link"></i>SOCIAL</p>
+      </article>
+      <article class="sidebar-categories">
+        <h6>Categories</h6>
+        <p><span class="squaredFour">
+          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Administrative</p>
+        <p><span class="squaredFour">
+          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Design</p>
+        <p><span class="squaredFour">
+          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Executive</p>
+        <p><span class="squaredFour">
+          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Human Resources</p>
+      </article>
+    </section>
+    <main>
+      <section class="nav-bar">
+       <div><i class="fas fa-bars"></i></div>
+       <div class="search"><i class="fas fa-search"></i>Search for a job, task, or resumes</div>
+       <div><i class="fas fa-user-plus"></i></div>
+       <div><i class="fas fa-address-card"></i></div>
+       <div><i class="fas fa-box"></i></div>
+      </section>
+      <section class="info">
+        <div class="info-top">
+          <div class="info-left">
+            <h3>Customer Service Representative</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i>San Francisco, CA</p>
+            <a href="#" class="location">Preview this post</a>
+          </div>
+          <div class="info-right">
+            <button class="open"><i class="fas fa-circle"></i>OPEN</button>
+            <button><i class="fas fa-bookmark"></i></button>
+            <button><i class="fas fa-pencil-alt"></i></button>
+            <button><i class="fas fa-trash-alt"></i></button>
+          </div>
+        </div>
+        <div class="info-bottom">
+            <p>SUMMARY</p>
+            <p>APPLICANTS</p>
+            <p>JOB BOARD</p>
+            <p>INTERVIEWS</p>
+            <p>ACTIVITY</p>
+            <p>BROADCAST</p>
+            <p>NOTIFICATIONS</p>
+          </div>
+      </section>
+      <section class="details">
+        <article class="graphs">
+          <div class="collabsible-content">
+            <img src="assets/placeholder.png">
+          </div>
+          <input id="collapsible" class="toggle" type="checkbox" >
+          <label for="collapsible" class="btn-toggle">COLLAPSE ME</label>
+        </article>
+        <article class="lower-section">
+          <article class="table">
+            <table>
+              <thead>
+                <tr class="table-head">
+                  <th colspan="2">JOB DESCRIPTION<i class="fas fa-pencil-alt"></i>EDIT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="table-left">POSITION TITLE</td>
+                  <td>Customer Service Representative</td>
+                </tr>
+                <tr>
+                  <td class="table-left">LOCATION</td>
+                  <td>San Francisco, CA</td>
+                </tr>
+                <tr>
+                  <td class="table-left">EMPLOYMENT TYPE</td>
+                  <td>Full-time</td>
+                </tr>
+                <tr>
+                  <td class="table-left">EXPERIENCE</td>
+                  <td>Mid-level</td>
+                </tr>
+                <tr>
+                  <td class="table-left">STATUS</td>
+                  <td>Open</td>
+                </tr>
+                <tr>
+                  <td class="table-left">DESCRIPTION</td>
+                  <td>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret ea, an vix odio accusata maluisset, fierent copiosae scripserit cu nam. Per tibique offendit hendrerit ea.</td>
+                </tr>
+                <tr>
+                  <td class="table-left">HIRING LEAD</td>
+                  <td>Tom Tizzy</td>
+                </tr>
+                <tr>
+                  <td class="table-left">APPROVED SALARY</td>
+                  <td>$58,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+          <article class="social">
+            <button class="fb">Post to Facebook</button>
+            <button class="twitter">Tweet this Job</button>
+            <button class="linkedin">Post to Linkedin</button>
+            <div>
+              <h4>Link to this Job</h4>
+              <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
+              <button>www.website.com</button>
+            </div>
+            <div>
+              <h4>Link to this Job</h4>
+              <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
+              <button>www.website.com</button>
+            </div>
+            <div>
+              <h4>Link to this Job</h4>
+              <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
+              <button>www.website.com</button>
+            </div>
+          </article>
+        </article>
+        <article class="social">
+          
+        </article>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

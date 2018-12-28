@@ -1,0 +1,294 @@
+body {
+  display: grid;
+  grid-template-columns: 175px 1fr;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*SIDEBAR STYLING*/
+.sidebar {
+  background-color: #343F53;
+  color: #9fabc0;
+  font-size: 12px;
+}
+.sidebar-top {
+  text-align: center;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.fa-caret-down {
+  margin-left: 5px;
+}
+
+.sidebar-main,
+.sidebar-admin,
+.sidebar-categories,
+.sidebar-top {
+  padding: 15px;
+  border-bottom: 2px solid #283142;
+}
+
+.sidebar p {
+  font-weight: 700;
+}
+
+p i {
+  margin-right: 10px;
+}
+
+h6 {
+  margin-top: 7px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #63728d;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 100px;
+  display: block;
+  margin: auto;
+}
+
+.squaredFour {
+  width: 20px;
+  margin-right: 10px;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #ffd900;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+  }
+}    
+
+/*MAIN SECTION SYLING*/
+main {
+  display: grid;
+  grid-template-rows: 80px 190px 1fr;
+}
+
+.nav-bar {
+  display: grid;
+  grid-template-columns: .75fr 5fr .75fr .75fr .75fr;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #e5e7ea;
+  color: #9aa3b0;
+}
+
+.nav-bar div {
+  border-left: 1px solid #e5e7ea;
+  justify-self: stretch;
+  font-family: Raleway;
+/*  height: 100%;
+*/  align-self: center;
+}
+
+.nav-bar .search {
+  justify-self: start;
+  padding-left: 5%;
+}
+
+
+/*INFO SECTION*/
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e7ea;
+}
+.info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 46px;
+}
+
+.info-top h3 {
+  margin-top: 0px;
+  color: #4e505f;
+}
+
+.info-top i {
+  color: #9ca0ae;
+}
+
+.info-top p {
+  font-weight: 700;
+}
+
+.info-top a {
+  text-decoration: none;
+  color: #00a0fe;
+}
+.location {
+  display: inline;
+  color: #9ca0ae;
+}
+
+.info-bottom {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 46px;
+  padding-left: 46px;
+  font-size: 12px;
+}
+
+.info-bottom p {
+  padding-right: 35px;
+  font-weight: 700;
+  color: #9ca0ae;
+}
+
+/*INFO SECTION BUTTONS*/
+.info-right button {
+  background-color: #ffffff;
+  border-radius: 40px;
+  padding: 8px;
+  width: 37px;
+}
+
+.info-right i {
+  color: #9ca0ae;
+}
+
+.info-right .open {
+  width: 80px;
+  padding: 10px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.info-right .fa-circle {
+  color: #74d037;
+  width: 5px;
+  float: left;
+  padding-right: 3px;
+}
+
+/*GRAPHS AREA*/
+.details {
+  background-color: #ebf2f6;
+  padding: 46px;
+}
+
+.toggle {
+  display: none;
+}
+
+input[type = 'checkbox'] {
+  display: none;
+}
+
+.btn-toggle {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+/*
+.collabsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}*/
+
+.toggle:checked ~ .collapsible-content {
+  max-height: 350px;
+}
+
+.graphs img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+/*TABLE STYLING*/
+.lower-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10%;
+  margin-top: 55px;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  font-size: 14px;
+  color: #7788a1;
+  border-radius: 5px;
+}
+
+th {
+  background: #6d7d96;
+  color: #FFFFFF;
+  height: 60px;
+  text-align: left;
+  padding-left: 40px;
+  letter-spacing: .8px;
+}
+
+.table-left {
+  font-weight: 700;
+}
+
+tbody {
+  background: #ffffff;
+}
+
+td {
+  padding: 20px;
+}
+
+tr {
+  border-bottom: 2px solid #edf2f5;
+}
+
+/*SOCIAL SECTION*/
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social button {
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 14px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.fb {
+  background-color: #4d69c6;
+}
+
+.twitter {
+  background-color: #00a9f3;
+}
+
+.linkedin {
+  background-color: #007ebf;
+}
+
+.social div {
+  border-bottom: 2px solid #d1dae3;
+}
+
+
+
