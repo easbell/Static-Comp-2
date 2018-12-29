@@ -10,10 +10,12 @@ p {
 
 /*SIDEBAR STYLING*/
 .sidebar {
-  background-color: #343F53;
+  background-color: #2e384a;
+  opacity: .99;
   color: #9fabc0;
   font-size: 12px;
 }
+
 .sidebar-top {
   text-align: center;
 }
@@ -39,6 +41,11 @@ h5 {
 
 .sidebar p {
   font-weight: 700;
+}
+
+.sidebar p:hover{
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 p i {
@@ -92,8 +99,8 @@ main {
   border-left: 1px solid #e5e7ea;
   justify-self: stretch;
   font-family: Raleway;
-/*  height: 100%;
-*/  align-self: center;
+  height: 100%;
+  align-self: center;
 }
 
 .nav-bar .search {
@@ -109,6 +116,7 @@ main {
   justify-content: space-between;
   border-bottom: 1px solid #e5e7ea;
 }
+
 .info-top {
   display: flex;
   justify-content: space-between;
@@ -119,6 +127,8 @@ main {
 .info-top h3 {
   margin-top: 0px;
   color: #4e505f;
+  font-size: 27px;
+  font-weight: 400;
 }
 
 .info-top i {
@@ -133,24 +143,38 @@ main {
   text-decoration: none;
   color: #00a0fe;
 }
+
 .location {
   display: inline;
   color: #9ca0ae;
 }
 
+p .location {
+  font-weight: 300;
+}
+
 .info-bottom {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-right: 46px;
   padding-left: 46px;
   font-size: 12px;
+  max-width: 750px;
 }
 
 .info-bottom p {
-  padding-right: 35px;
+  padding-bottom: 18px;
   font-weight: 700;
   color: #9ca0ae;
+  margin: 0;
+  border-bottom: 2px solid #FFFFFF;
 }
+
+.info-bottom p:hover {
+  border-bottom: 2px solid #00a0fe;
+  color: #000000;
+}
+
 
 /*INFO SECTION BUTTONS*/
 .info-right button {
@@ -181,23 +205,90 @@ main {
 /*GRAPHS AREA*/
 .details {
   background-color: #ebf2f6;
-  padding: 46px;
+  padding: 24px 46px;
 }
 
-.toggle {
+.graphs {
+  display: flex;
+  align-items: center;
+}
+
+.graphs img {
+  display: inline-block;
+  width: 50%;
+}
+
+/*CIRCLE CHARTS*/
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 50%;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #d8e5ec;
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: #00c1c5;
+}
+
+.circular-chart.blue .circle {
+  stroke: #00a0fe;
+}
+
+.circular-chart.pink .circle {
+  stroke: #ba57af;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+/*.toggle {
   display: none;
 }
 
 input[type = 'checkbox'] {
   display: none;
-}
+}*/
 
-.btn-toggle {
+/*.btn-toggle {
   display: block;
   text-align: center;
   cursor: pointer;
   transition: all 0.25s ease-out;
-}
+}*/
 /*
 .collabsible-content {
   max-height: 0px;
@@ -205,15 +296,11 @@ input[type = 'checkbox'] {
   transition: max-height .25s ease-in-out;
 }*/
 
-.toggle:checked ~ .collapsible-content {
+/*.toggle:checked ~ .collapsible-content {
   max-height: 350px;
-}
+}*/
 
-.graphs img {
-  display: block;
-  width: 90%;
-  margin: auto;
-}
+
 
 /*TABLE STYLING*/
 .lower-section {
@@ -223,7 +310,38 @@ input[type = 'checkbox'] {
   margin-top: 55px;
 }
 
-table {
+.grid-table {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-size: 14px;
+  color: #7788a1;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 30px;
+}
+
+.grid-table span {
+  padding: 2px;
+  border-bottom: 2px solid #edf2f5;
+  padding: 24px 0px;
+}
+
+.grid-table strong {
+  margin-right: 15px;
+}
+
+.head {
+  background: #6d7d96;
+  color: #FFFFFF;
+  height: 60px;
+  padding: 0px;
+}
+
+.head strong {
+  padding: 24px;
+}
+
+/*table {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
@@ -255,7 +373,7 @@ td {
 
 tr {
   border-bottom: 2px solid #edf2f5;
-}
+}*/
 
 /*SOCIAL SECTION*/
 .social {
@@ -286,7 +404,7 @@ tr {
   background-color: #007ebf;
 }
 
-.social div {
+.social .border {
   border-bottom: 2px solid #d1dae3;
 }
 
