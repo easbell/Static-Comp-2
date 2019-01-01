@@ -5,7 +5,7 @@
       <link rel="stylesheet" type="text/css" href="normalize.css">
       <link rel="stylesheet" type="text/css" href="styles.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:300,400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Lato:300,400,700|Raleway:300,400,700" rel="stylesheet">
       <meta name="viewport" content="width= device-width, initial-scale=1">
   </head>
   <body>
@@ -16,30 +16,38 @@
       </article>
       <article class="sidebar-main">
         <h6>Main</h6>
-        <p><i class="fas fa-home"></i>HOME</p>
-        <p><i class="fas fa-briefcase"></i>JOBS</p>
-        <p><i class="fas fa-file-invoice"></i>RESUMES</p>
-        <p><i class="fas fa-list-alt"></i>TASKS</p>
-        <p><i class="fas fa-calendar-alt"></i>CALENDAR</p>
+        <p><i class="fas fa-home"></i>home</p>
+        <p><i class="fas fa-briefcase"></i>jobs</p>
+        <p><i class="fas fa-file-invoice"></i>resumes</p>
+        <p><i class="fas fa-list-alt"></i>tasks</p>
+        <p><i class="fas fa-calendar-alt"></i>calendar</p>
       </article>
       <article class="sidebar-admin">
         <h6>Admin</h6>
-        <p><i class="fas fa-users"></i>USERS</p>
-        <p><i class="fas fa-map-marker-alt"></i>LOCATIONS</p>
-        <p><i class="fab fa-stack-overflow"></i>WORKFLOWS</p>
-        <p><i class="fas fa-clipboard-list"></i>JOB BOARDS</p>
-        <p><i class="fas fa-link"></i>SOCIAL</p>
+        <p><i class="fas fa-users"></i>users</p>
+        <p><i class="fas fa-map-marker-alt"></i>locations</p>
+        <p><i class="fab fa-stack-overflow"></i>workflows</p>
+        <p><i class="fas fa-clipboard-list"></i>job boards</p>
+        <p><i class="fas fa-link"></i>social</p>
       </article>
       <article class="sidebar-categories">
         <h6>Categories</h6>
-        <p><span class="squaredFour">
-          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Administrative</p>
-        <p><span class="squaredFour">
-          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Design</p>
-        <p><span class="squaredFour">
-          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Executive</p>
-        <p><span class="squaredFour">
-          <input type="checkbox" value="None" id="squaredFour" name="check"/></span>Human Resources</p>
+          <p>
+            <input type="checkbox" id="test1" />
+            <label for="test1">Administrative</label>
+          </p>
+          <p>
+            <input type="checkbox" id="test2" />
+            <label for="test2">Design</label>
+          </p>
+          <p>
+            <input type="checkbox" id="test3" />
+            <label for="test3">Executive</label>
+          </p>
+          <p>
+            <input type="checkbox" id="test4" />
+            <label for="test4">Human Resources</label>
+          </p>
       </article>
     </section>
     <main>
@@ -78,51 +86,27 @@
         <article class="graphs">
           <div class="flex-wrapper">
             <div class="single-chart">
-              <svg viewBox="0 0 36 36" class="circular-chart green">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="80, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="20.35" class="percentage">3,154</text>
+              <svg class="circle-chart" viewbox="0 0 150 150" width="150" height="150">
+                <circle class="circle-bg" fill="none" cx="75" cy="75" r="70"/>
+                <circle class="circle green" stroke-width="10" stroke-dasharray="351, 439" fill="none" cx="75" cy="75" r="70"/>
+                <text text-anchor="middle" x="75" y="75" class="percentage">3,154</text>
+                <text text-anchor="middle" x="75" y="95" class="small">applicants</text>
               </svg>
             </div>
             <div class="single-chart">
-              <svg viewBox="0 0 36 36" class="circular-chart blue">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="40, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="20.35" class="percentage">1,546</text>
+              <svg class="circle-chart" viewbox="0 0 150 150" width="150" height="150">
+                <circle class="circle-bg" fill="none" cx="75" cy="75" r="70"/>
+                <circle class="circle blue" stroke-width="10" stroke-dasharray="175, 439" fill="none" cx="75" cy="75" r="70"/>
+                <text text-anchor="middle" x="75" y="75" class="percentage">1,546</text>
+                <text text-anchor="middle" x="75" y="95" class="small">interviews</text>
               </svg>
             </div>
             <div class="single-chart">
-              <svg viewBox="0 0 36 36" class="circular-chart pink">
-                <path class="circle-bg"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <path class="circle"
-                  stroke-dasharray="20, 100"
-                  d="M18 2.0845
-                    a 15.9155 15.9155 0 0 1 0 31.831
-                    a 15.9155 15.9155 0 0 1 0 -31.831"
-                />
-                <text x="18" y="20.35" class="percentage">912</text>
+              <svg class="circle-chart" viewbox="0 0 150 150" width="150" height="150">
+                <circle class="circle-bg" fill="none" cx="75" cy="75" r="70"/>
+                <circle class="circle pink" stroke-width="10" stroke-dasharray="88, 439" fill="none" cx="75" cy="75" r="70"/>
+                <text text-anchor="middle" x="73" y="75" class="percentage">912</text>
+                <text text-anchor="middle" x="75" y="95" class="small">forwards</text>
               </svg>
             </div>
           </div>
@@ -130,45 +114,62 @@
           <!-- <input id="collapsible" class="toggle" type="checkbox" >
           <label for="collapsible" class="btn-toggle">COLLAPSE ME</label> -->
         </article>
+        <section class="graph-btns">
+          <button>totals <i class="fas fa-circle"></i>out of 5,231 views</button>
+        </section>
+        <section class="graph-btns">
+          <button>applicants/day</button>
+        </section>
+        <div class="divider"><hr><i class="fas fa-chevron-up"></i><hr></div>
         <article class="lower-section">
           <div class="grid-table">
-            <span class="head"><strong>JOB DESCRIPTION</strong></span>
-            <span class="head"><strong><i class="fas fa-pencil-alt"></i>EDIT</strong></span>
-            <span><strong>POSITION TITLE</strong></span>
-            <span>Customer Service Representative</span>
-            <span><strong>LOCATION</strong></span>
-            <span>San Francisco, CA</span>
-            <span><strong>EMPLOYMENT TYPE</strong></span>
-            <span>Full-time</span>
-            <span><strong>EXPERIENCE</strong></span>
-            <span>Mid-level</span>
-            <span><strong>STATUS</strong></span>
-            <span>Open</span>
-            <span><strong>DESCRIPTION</strong></span>
-            <span>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret ea, an vix odio accusata maluisset, fierent copiosae scripserit cu nam. Per tibique offendit hendrerit ea.</span>
-            <span><strong>HIRING LEAD</strong></span>
-            <span>Tom Tizzy</span>
-            <span><strong>APPROVED SALARY</strong></span>
-            <span>$58,000</span>
+            <div class="grid-table-head">
+              <span class="head"><strong>JOB DESCRIPTION</strong></span>
+              <span class="head edit"><strong><i class="fas fa-pencil-alt edit-icon"></i>EDIT</strong></span>
+            </div>
+            <div class="grid-content">
+              <span><strong>POSITION TITLE</strong></span>
+              <span>Customer Service Representative</span>
+              <span><strong>LOCATION</strong></span>
+              <span>San Francisco, CA</span>
+              <span><strong>EMPLOYMENT TYPE</strong></span>
+              <span>Full-time</span>
+              <span><strong>EXPERIENCE</strong></span>
+              <span>Mid-level</span>
+              <span><strong>STATUS</strong></span>
+              <span>Open</span>
+              <span><strong>DESCRIPTION</strong></span>
+              <span>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret ea, an vix odio accusata maluisset, fierent copiosae scripserit cu nam. Per tibique offendit hendrerit ea.</span>
+              <span><strong>HIRING LEAD</strong></span>
+              <span>Tom Tizzy</span>
+              <span class="last"><strong>APPROVED SALARY</strong></span>
+              <span class="last">$58,000</span>
+            </div>
           </div>
           <article class="social">
-            <button class="fb">Post to Facebook</button>
-            <button class="twitter">Tweet this Job</button>
-            <button class="linkedin">Post to Linkedin</button>
+            <button class="fb sm"><img src="assets/facebook.svg" class="logo">Post to Facebook</button>
+            <button class="twitter sm"><img src="assets/twitter-circular.png" class="logo">Tweet this Job</button>
+            <button class="linkedin sm"><img src="assets/linkedin.svg" class="logo">Post to Linkedin</button>
             <div class="border">
-              <h4>Link to this Job</h4>
+              <h4><i class="fas fa-globe-americas"></i>Link to this Job</h4>
               <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
-              <button>www.website.com</button>
+              <div class="copy-input">
+                <input class="social-links" type="text" placeholder="http://loremipsum.dol/orsit/amet">
+                <button class="copy">Copy</button>
+              </div>
             </div>
             <div class="border">
-              <h4>Link to this Job</h4>
+              <h4><i class="fas fa-box"></i>Use the Button Widget</h4>
               <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
-              <button>www.website.com</button>
+              <div class="copy-input">
+                <input class="social-links" type="text" placeholder="http://loremipsum.dol/orsit/amet">
+                <button class="copy">Copy</button>
+              </div>
             </div>
             <div>
-              <h4>Link to this Job</h4>
+              <h4><i class="fas fa-upload"></i>Upload Resumes by Email</h4>
               <p>Lorem ipsum dolor sit amet, sumo efficiendi at mel. Cum tation partiendo ocurreret </p>
-              <button>www.website.com</button>
+              <input class="social-links email" type="text" placeholder="tomtizzy@gmail.com">
             </div>
           </article>
         </article>
