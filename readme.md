@@ -7,6 +7,9 @@ The purpose of this project was to replicate a given comp layout to enhance HTML
 ## Languages Used
 HTML, CSS
 
+## Wishlist
+If given more time I would have liked to make the sidebar and graph areas collapsible.
+
 ## Images
 My Project: <br>
 ![_users_elizabethasbell_turing_static-comp-2_index html 2](https://user-images.githubusercontent.com/34728115/50597499-d4ba2c00-0e64-11e9-94b9-a74d3495c97c.png)
