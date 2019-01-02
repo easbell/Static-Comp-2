@@ -51,10 +51,10 @@ h5 {
   border-left: 3px solid #2e384a;
 }
 
-.sidebar-main p:hover,
+.sidebar .sidebar-main p:hover,
 .sidebar-admin p:hover{
   color: #FFFFFF;
-  background-color: #2e384a;
+  background: #2e384a;
   border-left: 3px solid #00a0fe;
 }
 
@@ -157,26 +157,41 @@ main {
 }
 
 .nav-bar {
-  display: grid;
-  grid-template-columns: .75fr 5fr .75fr .75fr .75fr;
+  display: inline-flex;
+  /*grid-template-columns: .75fr 5fr .75fr .75fr .75fr;
+  grid-template-rows: 1fr;*/
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-items: center;
   border-bottom: 1px solid #e5e7ea;
   color: #9aa3b0;
 }
 
 .nav-bar div {
-  border-left: 1px solid #e5e7ea;
-  justify-self: stretch;
-  font-family: Raleway;
-  height: 100%;
-  align-self: center;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar div input {
+  width: 80%;
+  border: 0;
+}
+
+.user {
+  border-left:1px solid #eeeff3;
+}
+
+.border-icon {
+  border-right:1px solid #eeeff3;
+  width: 27px;
+  padding: 27px;
 }
 
 .nav-bar .search {
   justify-self: start;
   padding-left: 5%;
+  width: 50px;
 }
 
 
@@ -200,6 +215,18 @@ main {
   color: #4e505f;
   font-size: 27px;
   font-weight: 400;
+}
+
+.loc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 72%;
+}
+
+.bullet {
+  font-size: 6px;
+  color: #9ca0ae;
 }
 
 .info-top i {
@@ -275,7 +302,7 @@ p .location {
 /*GRAPHS AREA*/
 .details {
   background-color: #ebf2f6;
-  padding: 24px 46px;
+  padding: 24px 45px;
 }
 
 .graphs {
@@ -293,11 +320,13 @@ p .location {
   display: flex;
   flex-flow: row nowrap;
   width: 50%;
+  justify-content: space-around;
 }
 
 .single-chart {
-  width: 33%;
-  justify-content: space-around ;
+  width: 30%;
+  justify-content: space-around;
+  margin-right: 14px;
 }
 
 .circular-chart {
@@ -356,8 +385,8 @@ p .location {
 }
 
 .graph-btns {
-  flex-flow: row nowrap;
-  display: inline-flex;
+  flex-direction: row;
+  display: flex;
   justify-content: space-around;
 }
 
@@ -365,7 +394,9 @@ p .location {
   background-color: #ffffff;
   border-radius: 40px;
   padding: 8px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #58657a;
   display: flex;
   align-items: center;
   justify-content: space-between;
